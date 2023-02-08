@@ -5,20 +5,24 @@ console.log('ciao')
 
 // Creare una funzione per capire se la parola inserita è palindroma
 const string = prompt('Dimmi una parola e vediamo se è palindroma: ');
-const value = isPalindroma(string)  
+const value = isPalindroma(string) 
+
+
 function isPalindroma(str) {   
-    const lunghezzaParola = str.length;  
-  
-    // uso un loop per dividere le parole in due parti  
+    const lunghezzaParola = str.length; 
+    console.log(string) 
+    // uso un loop per dividere le parole in due parti e poi le confronto 
     for (let i = 0; i < lunghezzaParola / 2; i++) {  
-        // validate the first and last characters are the same  
+        // se la prima parte divisa è uguale alla seconda allora sono palindrome sennò non lo è 
         if (str[i] !== str[lunghezzaParola - 1 - i]) {  
           console.log('non è palindromo')
           return;
         }  
     }  
-    console.log( 'è palindroma');  
+    console.log( 'è palindroma'); 
+     
 }  
+
     
 
 
